@@ -1,0 +1,221 @@
+{
+  "chosen_model": "linear_interpretable",
+  "chosen_stats": [
+    "recent3_ws",
+    "prior_ppg",
+    "prior_ws",
+    "career_games",
+    "prior_mpg",
+    "prior_tov",
+    "career_ws",
+    "career_mpg",
+    "has_prior_stats",
+    "prior_bpm",
+    "prior_trb",
+    "prior_ast",
+    "prior_stl",
+    "prior_usg_pct",
+    "prior_ws48",
+    "prior_games",
+    "prior_blk",
+    "prior_ts_pct",
+    "prior_nrtg",
+    "prior_made_playoffs",
+    "team_nrtg",
+    "prior_active_payroll_m",
+    "team_made_playoffs",
+    "prior_dead_cap_m"
+  ],
+  "controls": [
+    "deal_year",
+    "years",
+    "age_at_signing",
+    "height_inches",
+    "weight_lb",
+    "years_pro",
+    "incumbent",
+    "player_option",
+    "max_tier_pct",
+    "supermax",
+    "outstanding_options",
+    "prior_team_big_market",
+    "prior_team_metro_pop_m",
+    "team_big_market",
+    "team_metro_pop_m",
+    "team_dma_rank",
+    "mid_season",
+    "signed_via_extension",
+    "signed_via_free_agency",
+    "signed_via_offer_sheet",
+    "signed_via_sign_and_trade",
+    "fa_status_RFA",
+    "fa_status_UFA",
+    "fa_status_na",
+    "cba_regime_cba_2017",
+    "cba_regime_pre_2017",
+    "pos_C",
+    "pos_PF",
+    "pos_PG",
+    "pos_SF",
+    "pos_SG",
+    "pos_na",
+    "team_market_size_ord",
+    "prior_team_market_size_ord",
+    "undrafted"
+  ],
+  "candidates": [
+    "has_prior_stats",
+    "prior_games",
+    "prior_ppg",
+    "prior_mpg",
+    "prior_per",
+    "prior_bpm",
+    "prior_vorp",
+    "prior_ws",
+    "prior_ws48",
+    "prior_usg_pct",
+    "prior_ts_pct",
+    "prior_ast",
+    "prior_trb",
+    "prior_blk",
+    "prior_stl",
+    "prior_tov",
+    "career_seasons",
+    "career_games",
+    "career_ppg",
+    "career_mpg",
+    "career_vorp",
+    "career_ws",
+    "recent3_vorp",
+    "recent3_ws",
+    "team_srs",
+    "team_nrtg",
+    "team_mov",
+    "team_wins",
+    "team_made_playoffs",
+    "team_champion",
+    "team_cap_space_m",
+    "team_active_payroll_m",
+    "team_dead_cap_m",
+    "team_players_active",
+    "prior_srs",
+    "prior_nrtg",
+    "prior_mov",
+    "prior_wins",
+    "prior_made_playoffs",
+    "prior_champion",
+    "prior_cap_space_m",
+    "prior_active_payroll_m",
+    "prior_dead_cap_m",
+    "prior_players_active"
+  ],
+  "pruned_kept": [
+    "recent3_ws",
+    "prior_ppg",
+    "prior_ws",
+    "career_games",
+    "prior_mpg",
+    "prior_tov",
+    "career_ws",
+    "career_mpg",
+    "has_prior_stats",
+    "prior_bpm",
+    "prior_trb",
+    "prior_ast",
+    "prior_stl",
+    "prior_usg_pct",
+    "prior_ws48",
+    "prior_games",
+    "prior_blk",
+    "prior_ts_pct",
+    "prior_nrtg",
+    "prior_made_playoffs",
+    "team_nrtg",
+    "prior_active_payroll_m",
+    "team_made_playoffs",
+    "prior_dead_cap_m",
+    "prior_cap_space_m",
+    "prior_champion",
+    "team_players_active",
+    "prior_players_active",
+    "team_dead_cap_m",
+    "team_champion",
+    "team_cap_space_m"
+  ],
+  "pruned_dropped": {
+    "recent3_vorp": {
+      "kept_partner": "recent3_ws",
+      "r": 0.92
+    },
+    "prior_vorp": {
+      "kept_partner": "prior_ws",
+      "r": 0.922
+    },
+    "career_ppg": {
+      "kept_partner": "prior_ppg",
+      "r": 0.881
+    },
+    "career_seasons": {
+      "kept_partner": "career_games",
+      "r": 0.981
+    },
+    "career_vorp": {
+      "kept_partner": "career_ws",
+      "r": 0.953
+    },
+    "prior_per": {
+      "kept_partner": "prior_bpm",
+      "r": 0.884
+    },
+    "prior_mov": {
+      "kept_partner": "prior_nrtg",
+      "r": 0.999
+    },
+    "prior_srs": {
+      "kept_partner": "prior_nrtg",
+      "r": 0.997
+    },
+    "prior_wins": {
+      "kept_partner": "prior_nrtg",
+      "r": 0.949
+    },
+    "team_mov": {
+      "kept_partner": "team_nrtg",
+      "r": 0.999
+    },
+    "team_srs": {
+      "kept_partner": "team_nrtg",
+      "r": 0.997
+    },
+    "team_wins": {
+      "kept_partner": "team_nrtg",
+      "r": 0.945
+    },
+    "team_active_payroll_m": {
+      "kept_partner": "prior_active_payroll_m",
+      "r": 0.854
+    }
+  },
+  "weak_corr_dropped": [
+    "prior_cap_space_m",
+    "prior_champion",
+    "prior_players_active",
+    "team_cap_space_m",
+    "team_champion",
+    "team_dead_cap_m",
+    "team_players_active"
+  ],
+  "constant_dropped": [
+    "cba_regime_cba_2023"
+  ],
+  "thresholds": {
+    "redundancy_r": 0.85,
+    "weak_corr": 0.1
+  },
+  "estimator": "ElasticNetCV (standardized), alpha x l1_ratio grid, 5-fold CV on train",
+  "notes": [
+    "Selection is deterministic + editable (see sections 3-4): layer 1 redundancy (|r|>=0.85), layer 2 weak target correlation (<0.10).",
+    "linear_interpretable (controls + KEPT_STATS) is the chosen model even though all-stats scores marginally better; linear_all_stats is the performance ceiling reference.",
+    "has_prior_stats / career_games are candidates, so median-imputed rows stay identifiable."
+  ]
+}

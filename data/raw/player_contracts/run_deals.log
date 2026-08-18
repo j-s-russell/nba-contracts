@@ -1,0 +1,17 @@
+Player pool (>= 500 career min): 1021 players
+Skipping salary step.
+Reusing 1021 mappings from spotrac_ids.csv
+  ... fetched 100/1021 player pages
+  ... fetched 200/1021 player pages
+  ... fetched 300/1021 player pages
+  ... fetched 400/1021 player pages
+  ... fetched 500/1021 player pages
+  ... fetched 600/1021 player pages
+  ... fetched 700/1021 player pages
+  ... fetched 800/1021 player pages
+  ... fetched 900/1021 player pages
+  ... fetched 1000/1021 player pages
+Wrote 2787 rows to /Users/joerussell/Desktop/PROJECTS/personal_projects/nba-contracts/data/raw/player_contracts/player_deals.csv
+
+Deals extracted: 2787 from 1021 players.
+Verification: {'ok': 1021, 'unverified': 0}

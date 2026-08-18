@@ -1,0 +1,176 @@
+{
+  "column_groups": {
+    "identifiers": [
+      "player_id",
+      "player_name"
+    ],
+    "split": [
+      "split"
+    ],
+    "target": [
+      "log_aav_cap_share"
+    ],
+    "deal_terms": [
+      "deal_year",
+      "years",
+      "incumbent",
+      "player_option",
+      "max_tier_pct",
+      "supermax",
+      "outstanding_options",
+      "mid_season"
+    ],
+    "player_stats": [
+      "has_prior_stats",
+      "prior_games",
+      "prior_ppg",
+      "prior_mpg",
+      "prior_per",
+      "prior_bpm",
+      "prior_vorp",
+      "prior_ws",
+      "prior_ws48",
+      "prior_usg_pct",
+      "prior_ts_pct",
+      "prior_ast",
+      "prior_trb",
+      "prior_blk",
+      "prior_stl",
+      "prior_tov",
+      "career_seasons",
+      "career_games",
+      "career_ppg",
+      "career_mpg",
+      "career_vorp",
+      "career_ws",
+      "recent3_vorp",
+      "recent3_ws"
+    ],
+    "physical": [
+      "age_at_signing",
+      "height_inches",
+      "weight_lb",
+      "years_pro",
+      "undrafted"
+    ],
+    "team_context": [
+      "team_srs",
+      "team_nrtg",
+      "team_mov",
+      "team_wins",
+      "team_made_playoffs",
+      "team_champion",
+      "team_cap_space_m",
+      "team_active_payroll_m",
+      "team_dead_cap_m",
+      "team_players_active",
+      "prior_srs",
+      "prior_nrtg",
+      "prior_mov",
+      "prior_wins",
+      "prior_made_playoffs",
+      "prior_champion",
+      "prior_cap_space_m",
+      "prior_active_payroll_m",
+      "prior_dead_cap_m",
+      "prior_players_active"
+    ],
+    "market": [
+      "prior_team_big_market",
+      "prior_team_metro_pop_m",
+      "team_big_market",
+      "team_metro_pop_m",
+      "team_dma_rank",
+      "team_market_size_ord",
+      "prior_team_market_size_ord"
+    ],
+    "deal_mechanism": [
+      "signed_via_extension",
+      "signed_via_free_agency",
+      "signed_via_offer_sheet",
+      "signed_via_sign_and_trade"
+    ],
+    "fa_status": [
+      "fa_status_RFA",
+      "fa_status_UFA",
+      "fa_status_na"
+    ],
+    "cba_regime": [
+      "cba_regime_cba_2017",
+      "cba_regime_cba_2023",
+      "cba_regime_pre_2017"
+    ],
+    "position": [
+      "pos_C",
+      "pos_PF",
+      "pos_PG",
+      "pos_SF",
+      "pos_SG",
+      "pos_na"
+    ]
+  },
+  "n_rows": 1364,
+  "n_features": 80,
+  "dropped_columns": [
+    "aav_m",
+    "aav_cap_share",
+    "salary_cap_m",
+    "deal_type",
+    "team",
+    "prior_team",
+    "team_option",
+    "player_id",
+    "player_name",
+    "deal_date"
+  ],
+  "imputed_columns": {
+    "prior_games": 66.0,
+    "prior_ppg": 9.478,
+    "prior_mpg": 24.912,
+    "prior_per": 14.9,
+    "prior_bpm": -0.1,
+    "prior_vorp": 0.7,
+    "prior_ws": 3.2,
+    "prior_ws48": 0.104,
+    "prior_usg_pct": 19.0,
+    "prior_ts_pct": 0.559,
+    "prior_ast": 1.722,
+    "prior_trb": 3.879,
+    "prior_blk": 0.354,
+    "prior_stl": 0.721,
+    "prior_tov": 1.148,
+    "career_ppg": 9.05,
+    "career_mpg": 23.27,
+    "incumbent": 1.0,
+    "team_srs": 0.28,
+    "team_nrtg": 0.3,
+    "team_mov": 0.28,
+    "team_wins": 42.0,
+    "team_made_playoffs": 1.0,
+    "team_champion": 0.0,
+    "team_cap_space_m": -12.901,
+    "team_active_payroll_m": 92.25,
+    "team_players_active": 15.0,
+    "prior_srs": 0.34,
+    "prior_nrtg": 0.5,
+    "prior_mov": 0.43,
+    "prior_wins": 42.0,
+    "prior_made_playoffs": 1.0,
+    "prior_champion": 0.0,
+    "prior_cap_space_m": -12.901,
+    "prior_active_payroll_m": 92.929,
+    "prior_players_active": 15.0,
+    "prior_team_big_market": 0.0,
+    "prior_team_metro_pop_m": 4.749,
+    "prior_team_market_size_ord": 1.0
+  },
+  "notes": [
+    "rfa_match recoded into offer_sheet (1 row).",
+    "Dropped exact duplicate (Carter 2022) + 3 non-consummated matched offer-sheet proposals.",
+    "Market scope: initial rookie-scale contracts (267), two-ways (42), rest-of-season (87) and renegotiations (5) excluded upstream by build_dataset (signed_via filter); verified absent.",
+    "Dropped 30 CBA-slotted rookie max extensions (pay scheduled by max tier / Rose rule, not market-determined); they were the only 'rookie-scale' rows in the market scope.",
+    "Performance-column NaNs median-imputed (fit on TRAIN rows only, leak-safe); has_prior_stats / career_games still flag 'did not play' rows.",
+    "pos: prior-season position with career-dominant fallback; one-hot with an n/a bucket (224 rows whose player never played before signing). Treated as a structural control in the models (like height/weight), not subject to the stat-feature selection.",
+    "No performance columns dropped or combined \u2014 left intact for testing different stat combinations."
+  ]
+}

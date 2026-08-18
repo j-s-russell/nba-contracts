@@ -1,0 +1,112 @@
+Player pool (>= 500 career min): 1021 players
+Skipping salary step.
+  ... searched 100/1021 players
+  [rate-limit cooldown] pausing 120s
+  [rate-limit cooldown] pausing 120s
+  [rate-limit cooldown] pausing 120s
+  [rate-limit cooldown] pausing 120s
+  [rate-limit cooldown] pausing 120s
+  [rate-limit cooldown] pausing 120s
+  [rate-limit cooldown] pausing 120s
+  [rate-limit cooldown] pausing 120s
+  ... searched 200/1021 players
+  [rate-limit cooldown] pausing 120s
+  [rate-limit cooldown] pausing 120s
+  [rate-limit cooldown] pausing 120s
+  [rate-limit cooldown] pausing 120s
+  [rate-limit cooldown] pausing 120s
+  [rate-limit cooldown] pausing 120s
+  [rate-limit cooldown] pausing 120s
+  [rate-limit cooldown] pausing 120s
+  [rate-limit cooldown] pausing 120s
+  ... searched 300/1021 players
+  [rate-limit cooldown] pausing 120s
+  [rate-limit cooldown] pausing 120s
+  [rate-limit cooldown] pausing 120s
+  [rate-limit cooldown] pausing 120s
+  [rate-limit cooldown] pausing 120s
+  [rate-limit cooldown] pausing 120s
+  [rate-limit cooldown] pausing 120s
+  [rate-limit cooldown] pausing 120s
+  ... searched 400/1021 players
+  [rate-limit cooldown] pausing 120s
+  [rate-limit cooldown] pausing 120s
+  [rate-limit cooldown] pausing 120s
+  WARN no spotrac match: jacksgg01 GG Jackson II (PF)
+  [rate-limit cooldown] pausing 120s
+  [rate-limit cooldown] pausing 120s
+  [rate-limit cooldown] pausing 120s
+  [rate-limit cooldown] pausing 120s
+  [rate-limit cooldown] pausing 120s
+  ... searched 500/1021 players
+  [rate-limit cooldown] pausing 120s
+  [rate-limit cooldown] pausing 120s
+  [rate-limit cooldown] pausing 120s
+  [rate-limit cooldown] pausing 120s
+  [rate-limit cooldown] pausing 120s
+  [rate-limit cooldown] pausing 120s
+  [rate-limit cooldown] pausing 120s
+  WARN no spotrac match: mbahalu01 Luc Mbah a Moute (PF)
+  [rate-limit cooldown] pausing 120s
+  ... searched 600/1021 players
+  [rate-limit cooldown] pausing 120s
+  [rate-limit cooldown] pausing 120s
+  [rate-limit cooldown] pausing 120s
+  [rate-limit cooldown] pausing 120s
+  [rate-limit cooldown] pausing 120s
+  [rate-limit cooldown] pausing 120s
+  [rate-limit cooldown] pausing 120s
+  [rate-limit cooldown] pausing 120s
+  ... searched 700/1021 players
+  [rate-limit cooldown] pausing 120s
+  [rate-limit cooldown] pausing 120s
+  [rate-limit cooldown] pausing 120s
+  [rate-limit cooldown] pausing 120s
+  [rate-limit cooldown] pausing 120s
+  [rate-limit cooldown] pausing 120s
+  [rate-limit cooldown] pausing 120s
+  [rate-limit cooldown] pausing 120s
+  ... searched 800/1021 players
+  [rate-limit cooldown] pausing 120s
+  [rate-limit cooldown] pausing 120s
+  [rate-limit cooldown] pausing 120s
+  [rate-limit cooldown] pausing 120s
+  [rate-limit cooldown] pausing 120s
+  [rate-limit cooldown] pausing 120s
+  [rate-limit cooldown] pausing 120s
+  [rate-limit cooldown] pausing 120s
+  ... searched 900/1021 players
+  [rate-limit cooldown] pausing 120s
+  [rate-limit cooldown] pausing 120s
+  [rate-limit cooldown] pausing 120s
+  [rate-limit cooldown] pausing 120s
+  [rate-limit cooldown] pausing 120s
+  [rate-limit cooldown] pausing 120s
+  [rate-limit cooldown] pausing 120s
+  [rate-limit cooldown] pausing 120s
+  ... searched 1000/1021 players
+  [rate-limit cooldown] pausing 120s
+  [rate-limit cooldown] pausing 120s
+Wrote 1019 rows to /Users/joerussell/Desktop/PROJECTS/personal_projects/nba-contracts/data/raw/player_contracts/spotrac_ids.csv
+
+Spotrac mapping: 1019/1021 mapped. Low/medium confidence: 29
+  2 search failures: ['jacksgg01', 'mbahalu01']
+Traceback (most recent call last):
+  File "/Users/joerussell/Desktop/PROJECTS/personal_projects/nba-contracts/scrapers/run_player_contracts.py", line 285, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/Users/joerussell/Desktop/PROJECTS/personal_projects/nba-contracts/scrapers/run_player_contracts.py", line 277, in main
+    step_deals(ids, pool_by_id, client)
+  File "/Users/joerussell/Desktop/PROJECTS/personal_projects/nba-contracts/scrapers/run_player_contracts.py", line 167, in step_deals
+    page = parse_player_page(html, sid)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/joerussell/Desktop/PROJECTS/personal_projects/nba-contracts/scrapers/parse_spotrac_deals.py", line 237, in parse_player_page
+    "transactions": parse_transactions(html, spotrac_id),
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/joerussell/Desktop/PROJECTS/personal_projects/nba-contracts/scrapers/parse_spotrac_deals.py", line 180, in parse_transactions
+    deal["total_value_m"] = _parse_amount(m.group(2))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/joerussell/Desktop/PROJECTS/personal_projects/nba-contracts/scrapers/parse_spotrac_deals.py", line 160, in _parse_amount
+    return float(value.replace(",", ""))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: '.15.89'

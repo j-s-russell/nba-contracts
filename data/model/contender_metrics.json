@@ -1,0 +1,264 @@
+{
+ "contender_nrtg_threshold": 4.0,
+ "star_tier": 0.3,
+ "team_quality_coefs": {
+  "team_nrtg": {
+   "linear_interpretable": -0.07929025987947057,
+   "linear_all_stats": -0.0
+  },
+  "team_made_playoffs": {
+   "linear_interpretable": -0.0,
+   "linear_all_stats": 0.014736737268879092
+  }
+ },
+ "interaction_readout": {
+  "slope_mover": -0.06329462276445355,
+  "slope_re_sign": -0.06329462276445355,
+  "slope_non_star": -0.06329462276445355,
+  "slope_star": -0.07959160726336645,
+  "coef_team_nrtg_x_incumbent": -0.0,
+  "coef_team_nrtg_x_star": -0.016296984498912905,
+  "val_rmse_base": 0.4509502475952761,
+  "val_rmse_interaction": 0.4494140489093383
+ },
+ "player_quality_only": {
+  "n_features": 57,
+  "val_rmse": 0.4541517932282197
+ },
+ "below_market_discount": {
+  "val": {
+   "all": [
+    {
+     "segment": "contender=no / mover",
+     "n": 52,
+     "disc_log": -0.0259,
+     "disc_cap_share": -0.0024
+    },
+    {
+     "segment": "contender=no / re-sign",
+     "n": 128,
+     "disc_log": -0.0145,
+     "disc_cap_share": -0.002
+    },
+    {
+     "segment": "contender=yes / mover",
+     "n": 10,
+     "disc_log": 0.1036,
+     "disc_cap_share": 0.0053
+    },
+    {
+     "segment": "contender=yes / re-sign",
+     "n": 26,
+     "disc_log": 0.0245,
+     "disc_cap_share": 0.0027
+    }
+   ],
+   "star": [
+    {
+     "segment": "contender=no / mover",
+     "n": 20,
+     "disc_log": -0.0355,
+     "disc_cap_share": -0.0043
+    },
+    {
+     "segment": "contender=no / re-sign",
+     "n": 44,
+     "disc_log": -0.0229,
+     "disc_cap_share": -0.0043
+    },
+    {
+     "segment": "contender=yes / mover",
+     "n": 3,
+     "disc_log": 0.0799,
+     "disc_cap_share": 0.0096
+    },
+    {
+     "segment": "contender=yes / re-sign",
+     "n": 10,
+     "disc_log": 0.0125,
+     "disc_cap_share": 0.0016
+    }
+   ]
+  },
+  "val_test": {
+   "all": [
+    {
+     "segment": "contender=no / mover",
+     "n": 101,
+     "disc_log": -0.0341,
+     "disc_cap_share": -0.0033
+    },
+    {
+     "segment": "contender=no / re-sign",
+     "n": 254,
+     "disc_log": -0.0143,
+     "disc_cap_share": -0.0016
+    },
+    {
+     "segment": "contender=yes / mover",
+     "n": 24,
+     "disc_log": 0.0756,
+     "disc_cap_share": 0.005
+    },
+    {
+     "segment": "contender=yes / re-sign",
+     "n": 79,
+     "disc_log": 0.0345,
+     "disc_cap_share": 0.0036
+    }
+   ],
+   "star": [
+    {
+     "segment": "contender=no / mover",
+     "n": 50,
+     "disc_log": -0.0406,
+     "disc_cap_share": -0.0048
+    },
+    {
+     "segment": "contender=no / re-sign",
+     "n": 95,
+     "disc_log": -0.0211,
+     "disc_cap_share": -0.0031
+    },
+    {
+     "segment": "contender=yes / mover",
+     "n": 13,
+     "disc_log": 0.0619,
+     "disc_cap_share": 0.007
+    },
+    {
+     "segment": "contender=yes / re-sign",
+     "n": 36,
+     "disc_log": 0.0252,
+     "disc_cap_share": 0.0043
+    }
+   ]
+  }
+ },
+ "below_market": {
+  "val": {
+   "all": [
+    {
+     "segment": "contender=no / mover",
+     "n": 52,
+     "bias_log": -0.1527,
+     "bias_cap_share": 0.0004,
+     "rmse_log": 0.5637
+    },
+    {
+     "segment": "contender=no / re-sign",
+     "n": 128,
+     "bias_log": -0.0777,
+     "bias_cap_share": 0.0073,
+     "rmse_log": 0.4253
+    },
+    {
+     "segment": "contender=yes / mover",
+     "n": 10,
+     "bias_log": -0.0353,
+     "bias_cap_share": 0.0019,
+     "rmse_log": 0.3599
+    },
+    {
+     "segment": "contender=yes / re-sign",
+     "n": 26,
+     "bias_log": -0.0397,
+     "bias_cap_share": 0.0062,
+     "rmse_log": 0.3711
+    }
+   ],
+   "star": [
+    {
+     "segment": "contender=no / mover",
+     "n": 20,
+     "bias_log": -0.2415,
+     "bias_cap_share": -0.0039,
+     "rmse_log": 0.6413
+    },
+    {
+     "segment": "contender=no / re-sign",
+     "n": 44,
+     "bias_log": 0.0261,
+     "bias_cap_share": 0.02,
+     "rmse_log": 0.4635
+    },
+    {
+     "segment": "contender=yes / mover",
+     "n": 3,
+     "bias_log": -0.0707,
+     "bias_cap_share": -0.001,
+     "rmse_log": 0.2359
+    },
+    {
+     "segment": "contender=yes / re-sign",
+     "n": 10,
+     "bias_log": 0.1594,
+     "bias_cap_share": 0.0239,
+     "rmse_log": 0.4748
+    }
+   ]
+  },
+  "val_test": {
+   "all": [
+    {
+     "segment": "contender=no / mover",
+     "n": 101,
+     "bias_log": -0.1921,
+     "bias_cap_share": -0.0038,
+     "rmse_log": 0.5526
+    },
+    {
+     "segment": "contender=no / re-sign",
+     "n": 254,
+     "bias_log": -0.0825,
+     "bias_cap_share": 0.0076,
+     "rmse_log": 0.4407
+    },
+    {
+     "segment": "contender=yes / mover",
+     "n": 24,
+     "bias_log": -0.1414,
+     "bias_cap_share": -0.0041,
+     "rmse_log": 0.4817
+    },
+    {
+     "segment": "contender=yes / re-sign",
+     "n": 79,
+     "bias_log": -0.1362,
+     "bias_cap_share": 0.0007,
+     "rmse_log": 0.4564
+    }
+   ],
+   "star": [
+    {
+     "segment": "contender=no / mover",
+     "n": 50,
+     "bias_log": -0.2352,
+     "bias_cap_share": -0.0061,
+     "rmse_log": 0.6178
+    },
+    {
+     "segment": "contender=no / re-sign",
+     "n": 95,
+     "bias_log": 0.0016,
+     "bias_cap_share": 0.0168,
+     "rmse_log": 0.4765
+    },
+    {
+     "segment": "contender=yes / mover",
+     "n": 13,
+     "bias_log": -0.2531,
+     "bias_cap_share": -0.0156,
+     "rmse_log": 0.5493
+    },
+    {
+     "segment": "contender=yes / re-sign",
+     "n": 36,
+     "bias_log": 0.033,
+     "bias_cap_share": 0.0106,
+     "rmse_log": 0.4803
+    }
+   ]
+  }
+ }
+}

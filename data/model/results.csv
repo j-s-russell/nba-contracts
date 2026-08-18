@@ -1,0 +1,43 @@
+model,description,fit_params,split,rmse,mae,r2,rmse_dollars,mae_dollars
+global_median,median of the train target for every deal,median=-2.9167,train,1.1527,1.0069,-0.0021,0.105,0.071
+global_median,median of the train target for every deal,median=-2.9167,val,1.0276,0.8801,-0.0,0.106,0.066
+global_median,median of the train target for every deal,median=-2.9167,test,0.9784,0.8192,-0.0067,0.104,0.065
+segment_median_years_pro,"train median per years_pro bucket (0,1-3,4-6,7-9,10+)","{""0"": -4.332629, ""1-3"": -2.8075085, ""4-6"": -2.5672775, ""7-9"": -1.960817, ""10+"": -2.4042459999999997}",train,0.8759,0.6944,0.4214,0.088,0.057
+segment_median_years_pro,"train median per years_pro bucket (0,1-3,4-6,7-9,10+)","{""0"": -4.332629, ""1-3"": -2.8075085, ""4-6"": -2.5672775, ""7-9"": -1.960817, ""10+"": -2.4042459999999997}",val,0.9066,0.7259,0.2215,0.093,0.061
+segment_median_years_pro,"train median per years_pro bucket (0,1-3,4-6,7-9,10+)","{""0"": -4.332629, ""1-3"": -2.8075085, ""4-6"": -2.5672775, ""7-9"": -1.960817, ""10+"": -2.4042459999999997}",test,0.859,0.7069,0.2241,0.089,0.062
+segment_median_prior_mpg,"train median per prior_mpg bucket (<10,10-20,20-30,30+)","{""<10"": -4.131628, ""10-20"": -3.525075, ""20-30"": -3.149883, ""30+"": -1.409717}",train,0.8922,0.7385,0.3997,0.068,0.048
+segment_median_prior_mpg,"train median per prior_mpg bucket (<10,10-20,20-30,30+)","{""<10"": -4.131628, ""10-20"": -3.525075, ""20-30"": -3.149883, ""30+"": -1.409717}",val,0.7087,0.5948,0.5244,0.062,0.043
+segment_median_prior_mpg,"train median per prior_mpg bucket (<10,10-20,20-30,30+)","{""<10"": -4.131628, ""10-20"": -3.525075, ""20-30"": -3.149883, ""30+"": -1.409717}",test,0.7473,0.6018,0.4127,0.069,0.046
+linear_controls_only,elastic net on 35 features (0 stats),"{""alpha"": 0.02580861540418074, ""l1_ratio"": 0.9, ""n_nonzero_total"": 11}",train,0.6003,0.4921,0.7283,0.061,0.039
+linear_controls_only,elastic net on 35 features (0 stats),"{""alpha"": 0.02580861540418074, ""l1_ratio"": 0.9, ""n_nonzero_total"": 11}",val,0.6653,0.5541,0.5809,0.063,0.042
+linear_controls_only,elastic net on 35 features (0 stats),"{""alpha"": 0.02580861540418074, ""l1_ratio"": 0.9, ""n_nonzero_total"": 11}",test,0.7076,0.5742,0.4734,0.072,0.048
+linear_interpretable,elastic net on 59 features (24 stats),"{""alpha"": 0.044366873309786115, ""l1_ratio"": 0.1, ""n_nonzero_total"": 44}",train,0.48,0.3779,0.8263,0.062,0.031
+linear_interpretable,elastic net on 59 features (24 stats),"{""alpha"": 0.044366873309786115, ""l1_ratio"": 0.1, ""n_nonzero_total"": 44}",val,0.451,0.3627,0.8074,0.046,0.028
+linear_interpretable,elastic net on 59 features (24 stats),"{""alpha"": 0.044366873309786115, ""l1_ratio"": 0.1, ""n_nonzero_total"": 44}",test,0.4878,0.3877,0.7497,0.05,0.032
+linear_all_stats,elastic net on 79 features (44 stats),"{""alpha"": 0.002955209235202888, ""l1_ratio"": 0.9, ""n_nonzero_total"": 54}",train,0.4617,0.3577,0.8393,0.058,0.029
+linear_all_stats,elastic net on 79 features (44 stats),"{""alpha"": 0.002955209235202888, ""l1_ratio"": 0.9, ""n_nonzero_total"": 54}",val,0.4299,0.341,0.825,0.044,0.027
+linear_all_stats,elastic net on 79 features (44 stats),"{""alpha"": 0.002955209235202888, ""l1_ratio"": 0.9, ""n_nonzero_total"": 54}",test,0.4683,0.3676,0.7694,0.053,0.032
+linear_posinter,"chosen set + box-score stats + hypothesis pos x stat interactions (ast x PG, ppg x SG, blk x C, trb x C)","{""alpha"": 0.044366873309786115, ""l1_ratio"": 0.1, ""n_nonzero_total"": 43}",train,0.4799,0.3774,0.8263,0.062,0.03
+linear_posinter,"chosen set + box-score stats + hypothesis pos x stat interactions (ast x PG, ppg x SG, blk x C, trb x C)","{""alpha"": 0.044366873309786115, ""l1_ratio"": 0.1, ""n_nonzero_total"": 43}",val,0.4495,0.3612,0.8086,0.046,0.028
+linear_posinter,"chosen set + box-score stats + hypothesis pos x stat interactions (ast x PG, ppg x SG, blk x C, trb x C)","{""alpha"": 0.044366873309786115, ""l1_ratio"": 0.1, ""n_nonzero_total"": 43}",test,0.4867,0.3858,0.7509,0.05,0.031
+rf_default,RandomForest default params,"n_estimators=100, defaults",train,0.1611,0.1162,0.9804,0.016,0.009
+rf_default,RandomForest default params,"n_estimators=100, defaults",val,0.4265,0.315,0.8277,0.037,0.024
+rf_default,RandomForest default params,"n_estimators=100, defaults",test,0.428,0.3148,0.8074,0.041,0.026
+gb_default,GradientBoosting default params,"n_estimators=100, lr=0.1, defaults",train,0.2973,0.2187,0.9333,0.025,0.016
+gb_default,GradientBoosting default params,"n_estimators=100, lr=0.1, defaults",val,0.3966,0.2969,0.851,0.04,0.025
+gb_default,GradientBoosting default params,"n_estimators=100, lr=0.1, defaults",test,0.4353,0.3223,0.8007,0.043,0.027
+rf_tuned,"RandomForest, walk-forward tuned","{""params"": {""n_estimators"": 700, ""min_samples_leaf"": 2, ""max_features"": 0.3, ""max_depth"": null}, ""wf_mean_rmse"": 0.4169}",train,0.203,0.1436,0.9689,0.018,0.011
+rf_tuned,"RandomForest, walk-forward tuned","{""params"": {""n_estimators"": 700, ""min_samples_leaf"": 2, ""max_features"": 0.3, ""max_depth"": null}, ""wf_mean_rmse"": 0.4169}",val,0.4062,0.2969,0.8438,0.038,0.023
+rf_tuned,"RandomForest, walk-forward tuned","{""params"": {""n_estimators"": 700, ""min_samples_leaf"": 2, ""max_features"": 0.3, ""max_depth"": null}, ""wf_mean_rmse"": 0.4169}",test,0.4206,0.3047,0.814,0.041,0.025
+gb_tuned,"GradientBoosting, walk-forward tuned","{""params"": {""subsample"": 1.0, ""n_estimators"": 300, ""min_samples_leaf"": 10, ""max_depth"": 4, ""learning_rate"": 0.02}, ""wf_mean_rmse"": 0.4213}",train,0.2805,0.2019,0.9407,0.022,0.014
+gb_tuned,"GradientBoosting, walk-forward tuned","{""params"": {""subsample"": 1.0, ""n_estimators"": 300, ""min_samples_leaf"": 10, ""max_depth"": 4, ""learning_rate"": 0.02}, ""wf_mean_rmse"": 0.4213}",val,0.3939,0.2954,0.8531,0.037,0.024
+gb_tuned,"GradientBoosting, walk-forward tuned","{""params"": {""subsample"": 1.0, ""n_estimators"": 300, ""min_samples_leaf"": 10, ""max_depth"": 4, ""learning_rate"": 0.02}, ""wf_mean_rmse"": 0.4213}",test,0.428,0.3101,0.8074,0.041,0.026
+tobit_ceiling,"Tobit MLE, right-censored at log(max_tier_pct); predictions = conditional observed expectation","{""tol"": 0.05, ""sigma"": 0.4787, ""converged"": true}",train,0.4705,0.3628,0.833,0.063,0.03
+tobit_ceiling,"Tobit MLE, right-censored at log(max_tier_pct); predictions = conditional observed expectation","{""tol"": 0.05, ""sigma"": 0.4787, ""converged"": true}",val,0.4542,0.3636,0.8046,0.047,0.029
+tobit_ceiling,"Tobit MLE, right-censored at log(max_tier_pct); predictions = conditional observed expectation","{""tol"": 0.05, ""sigma"": 0.4787, ""converged"": true}",test,0.515,0.4144,0.7211,0.057,0.035
+two_stage_ceiling,Two-stage Heckman: Probit selection + IMR-corrected OLS; latent expectation,"{""tol"": 0.05, ""rho_sigma"": 0.0082, ""imr_p"": 0.96}",train,0.4739,0.367,0.8306,0.071,0.031
+two_stage_ceiling,Two-stage Heckman: Probit selection + IMR-corrected OLS; latent expectation,"{""tol"": 0.05, ""rho_sigma"": 0.0082, ""imr_p"": 0.96}",val,0.4666,0.3722,0.7939,0.046,0.029
+two_stage_ceiling,Two-stage Heckman: Probit selection + IMR-corrected OLS; latent expectation,"{""tol"": 0.05, ""rho_sigma"": 0.0082, ""imr_p"": 0.96}",test,0.5354,0.4311,0.6985,0.055,0.036
+quantile_median,"QuantileRegressor tau=0.50 (prediction-interval median), walk-forward alpha tuning","{""tau"": 0.5, ""alpha"": 0.05}",train,0.534,0.3923,0.785,0.055,0.03
+quantile_median,"QuantileRegressor tau=0.50 (prediction-interval median), walk-forward alpha tuning","{""tau"": 0.5, ""alpha"": 0.05}",val,0.4399,0.3345,0.8167,0.048,0.026
+quantile_median,"QuantileRegressor tau=0.50 (prediction-interval median), walk-forward alpha tuning","{""tau"": 0.5, ""alpha"": 0.05}",test,0.4611,0.3609,0.7764,0.055,0.033

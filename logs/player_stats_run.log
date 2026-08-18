@@ -1,0 +1,51 @@
+Fetching 2015-16 (2016) ...
+Fetching 2016-17 (2017) ...
+Fetching 2017-18 (2018) ...
+Fetching 2018-19 (2019) ...
+Fetching 2019-20 (2020) ...
+Fetching 2020-21 (2021) ...
+Fetching 2021-22 (2022) ...
+Fetching 2022-23 (2023) ...
+Fetching 2023-24 (2024) ...
+Fetching 2024-25 (2025) ...
+Fetching 2025-26 (2026) ...
+
+Stats parsed: 5968 player-season rows across 11 seasons.
+Distinct players: 1554
+
+Fetching attribute pages for 1554 players ...
+  ... 50/1554 players
+  ... 100/1554 players
+  ... 150/1554 players
+  ... 200/1554 players
+  ... 250/1554 players
+  ... 300/1554 players
+  ... 350/1554 players
+  ... 400/1554 players
+  ... 450/1554 players
+  ... 500/1554 players
+  ... 550/1554 players
+  ... 600/1554 players
+  ... 650/1554 players
+  ... 700/1554 players
+  ... 750/1554 players
+  ... 800/1554 players
+  ... 850/1554 players
+  ... 900/1554 players
+  ... 950/1554 players
+  ... 1000/1554 players
+  ... 1050/1554 players
+  ... 1100/1554 players
+  ... 1150/1554 players
+  ... 1200/1554 players
+  ... 1250/1554 players
+  ... 1300/1554 players
+  ... 1350/1554 players
+  ... 1400/1554 players
+  ... 1450/1554 players
+  ... 1500/1554 players
+  ... 1550/1554 players
+
+Attributes coverage: missing=0, no height=0, no weight=0, no debut year=0
+Wrote 1554 attribute rows to /Users/joerussell/Desktop/PROJECTS/personal_projects/nba-contracts/data/raw/player_stats/player_attributes.csv
+Wrote 5968 player-season rows to /Users/joerussell/Desktop/PROJECTS/personal_projects/nba-contracts/data/raw/player_stats/player_stats.csv

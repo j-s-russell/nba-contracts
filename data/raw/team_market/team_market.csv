@@ -1,0 +1,37 @@
+team,team_name,dma_rank,tv_homes_m,metro_pop_m,market_size,big_market,source
+NYK,New York Knicks,1,7.49451,19.113,Large,1,Nielsen 2024-25 DMA universe; US Census metro pop 2024
+BKN,Brooklyn Nets,1,7.49451,19.113,Large,1,Nielsen 2024-25 DMA universe; US Census metro pop 2024
+LAL,Los Angeles Lakers,2,5.83579,12.901,Large,1,Nielsen 2024-25 DMA universe; US Census metro pop 2024
+LAC,LA Clippers,2,5.83579,12.901,Large,1,Nielsen 2024-25 DMA universe; US Census metro pop 2024
+CHI,Chicago Bulls,3,3.65475,9.441,Large,1,Nielsen 2024-25 DMA universe; US Census metro pop 2024
+DAL,Dallas Mavericks,4,3.26449,7.943,Large,1,Nielsen 2024-25 DMA universe; US Census metro pop 2024
+PHI,Philadelphia 76ers,5,3.14592,6.228,Large,1,Nielsen 2024-25 DMA universe; US Census metro pop 2024
+HOU,Houston Rockets,6,2.79742,7.206,Large,1,Nielsen 2024-25 DMA universe; US Census metro pop 2024
+ATL,Atlanta Hawks,7,2.75817,6.144,Large,1,Nielsen 2024-25 DMA universe; US Census metro pop 2024
+WAS,Washington Wizards,8,2.63064,6.385,Large,1,Nielsen 2024-25 DMA universe; US Census metro pop 2024
+BOS,Boston Celtics,9,2.58446,4.899,Large,1,Nielsen 2024-25 DMA universe; US Census metro pop 2024
+GSW,Golden State Warriors,10,2.54248,4.749,Large,1,Nielsen 2024-25 DMA universe; US Census metro pop 2024
+PHX,Phoenix Suns,12,2.19820,5.059,Large,0,Nielsen 2024-25 DMA universe; US Census metro pop 2024
+DET,Detroit Pistons,14,1.94075,4.365,Medium,0,Nielsen 2024-25 DMA universe; US Census metro pop 2024
+ORL,Orlando Magic,15,1.90242,2.673,Medium,0,Nielsen 2024-25 DMA universe; US Census metro pop 2024
+MIN,Minnesota Timberwolves,16,1.88668,3.703,Medium,0,Nielsen 2024-25 DMA universe; US Census metro pop 2024
+DEN,Denver Nuggets,17,1.80627,3.038,Medium,0,Nielsen 2024-25 DMA universe; US Census metro pop 2024
+MIA,Miami Heat,18,1.75692,6.266,Medium,0,Nielsen 2024-25 DMA universe; US Census metro pop 2024
+CLE,Cleveland Cavaliers,19,1.55434,2.088,Medium,0,Nielsen 2024-25 DMA universe; US Census metro pop 2024
+SAC,Sacramento Kings,20,1.49792,2.453,Small,0,Nielsen 2024-25 DMA universe; US Census metro pop 2024
+CHA,Charlotte Hornets,21,1.38202,2.660,Small,0,Nielsen 2024-25 DMA universe; US Census metro pop 2024
+POR,Portland Trail Blazers,23,1.27792,2.511,Small,0,Nielsen 2024-25 DMA universe; US Census metro pop 2024
+IND,Indiana Pacers,25,1.23221,2.126,Small,0,Nielsen 2024-25 DMA universe; US Census metro pop 2024
+UTA,Utah Jazz,28,1.16352,1.266,Small,0,Nielsen 2024-25 DMA universe; US Census metro pop 2024
+SAS,San Antonio Spurs,31,1.09640,2.602,Small,0,Nielsen 2024-25 DMA universe; US Census metro pop 2024
+MIL,Milwaukee Bucks,38,0.94490,1.586,Small,0,Nielsen 2024-25 DMA universe; US Census metro pop 2024
+OKC,Oklahoma City Thunder,47,0.76270,1.435,Small,0,Nielsen 2024-25 DMA universe; US Census metro pop 2024
+NOP,New Orleans Pelicans,50,0.67279,1.290,Small,0,Nielsen 2024-25 DMA universe; US Census metro pop 2024
+MEM,Memphis Grizzlies,51,0.66630,1.358,Small,0,Nielsen 2024-25 DMA universe; US Census metro pop 2024
+TOR,Toronto Raptors,,,6.202,Large,1,Nielsen not tracked for Canadian DMA; metro pop 2021 Census (proxy)
+NJN,New Jersey Nets,1,7.49451,19.113,Large,1,Nielsen 2024-25 NY DMA universe; US Census metro pop 2024
+NOH,New Orleans Hornets,50,0.67279,1.290,Small,0,Nielsen 2024-25 DMA universe; US Census metro pop 2024
+SEA,Seattle SuperSonics,13,2.09824,4.040,Large,0,Nielsen 2024-25 DMA universe; US Census metro pop 2024
+STL,St. Louis Hawks,24,1.27387,2.810,Small,0,Nielsen 2024-25 DMA universe; US Census metro pop 2024
+UTH,Utah Jazz,28,1.16352,1.266,Small,0,Nielsen 2024-25 DMA universe; US Census metro pop 2024
+CHH,Charlotte Hornets,21,1.38202,2.660,Small,0,Nielsen 2024-25 DMA universe; US Census metro pop 2024
